@@ -5,7 +5,7 @@ import Axios from 'axios';
 import PersonList from './PersonList';
 
 const Person : React.FC = () => {
-    const [person, setPerson] = useState<Array<object>>([{id:0,email:'',first_name:'',last_name:'',avatar:''}])
+    const [person, setPerson] = useState<Array<Data>>([{id:0,email:'',first_name:'',last_name:'',avatar:''}])
 
     useEffect( ()=>{
         let result:RootObject;
