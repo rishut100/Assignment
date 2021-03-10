@@ -9,7 +9,7 @@ const Person : React.FC = () => {
 
     useEffect( ()=>{
         let result:RootObject;
-        Axios.get("https://reqres.in/api/users/")
+        Axios.get(`https://reqres.in/api/users/`)
         .then((response) => {
             result = response.data;
             setPerson(result.data);

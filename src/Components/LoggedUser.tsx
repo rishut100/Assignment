@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class LoggedUser extends Component {
-    render() {
-        return (
-            <div>
-                Logged User Information
-            </div>
-        )
-    }
+const LoggedUser:React.FC= () => {
+    return (
+        <div>
+            LoggedUser page
+        </div>
+    )
 }
+
+export default LoggedUser;

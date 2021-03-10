@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Cart:React.FC= () => {
+const Gifts:React.FC= () => {
     return (
         <div>
-            Cart page
+            Gifts page
         </div>
     )
 }
 
-export default Cart;
+export default Gifts;
