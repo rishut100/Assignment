@@ -1,5 +1,5 @@
 import React from 'react';
-import {Data} from './Interfaces';
+import {Data} from './Model/Interfaces';
 import {makeStyles} from '@material-ui/core/styles';
 import {Grid,Paper} from '@material-ui/core';
 import Card from '@material-ui/core/card';
