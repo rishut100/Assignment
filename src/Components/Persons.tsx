@@ -28,15 +28,21 @@ const Person : React.FC= () => {
         .catch((err) => {
             console.log("Error is"+err);
         })   
-    },[page]);    
+    },[page]);  
+    var value;  
 
     return (
         <>
         <InfiniteScroll
         dataLength = {person.length}
         next= {() => {setPage(prev => prev + 1)}}
-        hasMore ={true}
+        hasMore ={value =  page > 12 ? false : true}
         loader = {<h4>Loading...</h4>}
+        endMessage ={
+            <p style={{textAlign : 'center'}}>
+                <strong>That's all for today !!! </strong>
+            </p>
+        }
         >
             <div className="container">
                 <PersonList items={person}/>
